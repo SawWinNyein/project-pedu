@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project PEDU - Educational Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PEDU</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#wikipedia">Wikipedia Content</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to Project PEDU</h1>
+            <p>Creating educational websites and Wikipedia content to spread knowledge</p>
+            <button id="cta-button">Learn More</button>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Project PEDU</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Project PEDU is an initiative to create educational resources and make them accessible online through websites and Wikipedia.</p>
+                    <p>Our mission is to democratize education by providing free, high-quality content to learners worldwide.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x300" alt="Education illustration">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Website Development</h3>
+                    <p>We create responsive, user-friendly educational websites tailored to your needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Wikipedia Content</h3>
+                    <p>Professional research and writing services for Wikipedia articles.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Content Management</h3>
+                    <p>We help organize and maintain your educational content online.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="wikipedia" class="wikipedia-section">
+            <h2>Wikipedia Content Creation</h2>
+            <div class="wikipedia-form">
+                <h3>Request a Wikipedia Article</h3>
+                <form id="article-request-form">
+                    <div class="form-group">
+                        <label for="topic">Topic:</label>
+                        <input type="text" id="topic" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Brief Description:</label>
+                        <textarea id="description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="references">References (if any):</label>
+                        <textarea id="references"></textarea>
+                    </div>
+                    <button type="submit">Submit Request</button>
+                </form>
+            </div>
+            <div class="published-articles">
+                <h3>Recently Published Articles</h3>
+                <div id="articles-list" class="articles-list">
+                    <!-- Articles will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Email: info@projectpedu.org</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Education St, Knowledge City</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Project PEDU</h3>
+                <p>Education for everyone, everywhere.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Project PEDU. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
